@@ -115,3 +115,40 @@ img {
     width: 100%;
     height: auto;
 }
+
+/* sections animations */
+
+header {
+    /* animation: topdown 700ms; */
+    /* animation: topdown 700ms 0s normal backwards; */
+    animation: topdown 700ms 0s normal;
+}
+
+main {
+    animation: downtop 700ms reverse backwards;
+    /* animation: downtop 700ms 350ms reverse backwards;*/
+}
+
+@keyframes topdown {
+    /* 0% {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    } */
+
+    0% {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes downtop {
+    100% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+}
